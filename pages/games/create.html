@@ -1,0 +1,96 @@
+<div class="template" style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-size: 1.5em;color:black;justify-content: center; text-align: center;">
+    <div>
+        <div id="generator-unauthenticated">
+            
+            <div class="details">
+                <h3>Attention human!</h3>
+                <p>Our AI algorithms have been hard at work creating the ultimate <strong>game generator</strong> experience. Log in now to experience the future of game development!</p>
+                <a href="/login" class="btn btn-secondary mb-3" data-navigo>Login</a>
+            </div>
+            <hr>
+            <img src="/static/unauthenticated.png" alt="robot form">
+        </div>
+        <div id="generator-wrapper">
+            <h2><strong>Create Game Idea</strong></h2>
+            <hr>
+            <div>
+
+                <!-- Categories -->
+                <div class="generator-categories">
+                    <div class="d-flex gap-3 justify-content-center">
+                        <button class="btn btn-category" id="show-manually-form">
+                            <img src="/static/robot-form4.png" alt="robot form">
+                            <span>Manually</span>
+                            <small>The power is in your hands! Fill out our game idea form to bring your dream game to reality. Don't miss this opportunity to create something truly one-of-a-kind.</small>
+                        </button>
+                        <button class="btn btn-category" id="show-automatic-form">
+                            <img src="/static/generate-image.png" alt="robot form">
+                            <span>AI-Generated</span>
+                            <small>Experience the magic of AI game generation with just one click! Simply press the button below and let our algorithms create a personalized game just for you.</small>
+                        </button>
+                    </div>                    
+                </div>
+
+                <div class="border" id="manually-form" style="font-size: 0.6em">
+                    <h3>Manually</h3>
+                    <strong><i class="fa-solid fa-coins"></i> 1 credit</strong>
+                    <p>Are you brimming with creative game ideas? Let's bring them to life! Fill out our form below and give us a glimpse into your imagination. It might take a few minutes to fill out, but we promise the result will be worth it. So get those creative juices flowing, and let's create something truly amazing together!</p>
+                    <hr>
+                    <form id="create-form">
+                        <div class="form-group d-flex gap-3">
+                            <div class="input-details">
+                                1. <label for="title">Title</label>
+                                <p>Don't be shy, give us the name you've been dreaming of, like 'Galactic Explorer' or 'Fantasy Quest', and let's create an unforgettable gaming experience together!</p>
+                            </div>
+                            <input type="text" class="form-control" name="title" id="title" required
+                                    aria-required="true" style="width: 100%;" placeholder="Enter Title">
+                        </div>
+                        <div class="form-group d-flex gap-3">
+                            <div class="input-details">
+                                2. <label for="description">Description</label>
+                                <p>Every great game needs a great description! Tell us what your game is all about in the space provided below, like 'A fast-paced racing game with high-speed thrills' or 'An epic battle against mythical beasts'. Let your creativity run wild!</p>
+                            </div>
+                            <textarea type="text" class="form-control" name="description" id="description" rows="5"
+                                style="resize:none" required aria-required="true" placeholder="Enter Description"></textarea>
+                        </div>
+                        <div class="form-group d-flex gap-3">
+                            <div class="input-details">
+                                3. <label for="genre">Genre</label>
+                                <p>What genre does your game belong to? Choose from popular options like action, adventure, puzzle, strategy, or something entirely new and unique. Let your creativity flow and tell us in the box below!</p>
+                            </div>
+                            <input type="text" class="form-control" name="genre" id="genre" required
+                                aria-required="true" placeholder="Enter Genre">
+                        </div>
+                        <div class="form-group d-flex gap-3">
+                            <div class="input-details">
+                                4. <label for="player">Player Characteristics</label>
+                                <p>The characters in your game need to be more than just pixels on a screen. Tell us about the defining traits of your characters, like being heroic, sassy, or adventurous, in the box below. Let's create characters that players will love and connect with!</p>
+                            </div>
+                            <input type="text" class="form-control" name="player" id="player" required
+                                aria-required="true" placeholder="Enter Player Characteristics">
+                        </div>
+                        <div id="mechanics-div"></div>
+                        <button type="submit" class="btn btn-success btn-block mb-2" id="create">Save Game</button>
+                    </form>
+                    <button class="btn btn-secondary btn-block mb-3 show-categories-btn">Cancel</button>
+                </div>
+                <div class="border" id="automatic-form" style="font-size: 0.6em">
+                    <h3>AI-Generated</h3>
+                    <strong><i class="fa-solid fa-coins"></i> 1 credit</strong>
+                    <p>Click on the Start button below and watch as our AI-powered game generator goes to work. We warn you, it might take a few minutes, but trust us, the wait will be worth it! In the meantime, feel free to stretch your legs or grab a snack – we'll notify you as soon as your personalized game is ready to play. Get ready to be amazed!</p>
+                    <form id="generate-form">
+                        <button type="submit" class="btn btn-success btn-block mb-2" id="generate">Start Generator</button>
+                    </form>
+                    <button class="btn btn-secondary btn-block mb-3 show-categories-btn">Cancel</button>
+                </div>
+            </div>
+            <hr>
+
+            <p class="disclaimer">Disclaimer: Please be advised that the content generated by the AI models is solely based on its training data and algorithms. The views and opinions expressed by the AI models do not necessarily reflect those of the publishers of this site.</p>
+            <div id="created-game"></div>
+            <div id="spinner" class="spinner-border mx-auto" role="status">
+                <span class="visually-hidden"></span>
+            </div>
+        </div>
+    </div>
+</div>

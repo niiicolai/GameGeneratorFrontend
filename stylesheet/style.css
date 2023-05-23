@@ -1,0 +1,39 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #13191e;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	margin: 0;
+}
+
+.logo {
+	flex: 0 0 auto;
+}
+
+img {
+	height: 50px;
+	margin-right: 10px;
+}
+
+h1 {
+	color: rgb(231, 207, 56);
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0;
+	flex: 1 1 auto;
+	text-align: center;
+	text-shadow:
+	-1px -1px 0 orange, /* Top left orange shadow */
+	 1px -1px 0 orange, /* Top right orange shadow */
+	-1px  1px 0 orange, /* Bottom left orange shadow */
+	 1px  1px 0 orange; /* Bottom right orange shadow */
+}

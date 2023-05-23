@@ -1,0 +1,51 @@
+<div class="template" style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-size: 1.5em;color:black;justify-content: center; text-align: center;">
+    <h2><strong>Game details</strong></h2><hr>
+    <div id="game-idea"></div>
+    <div class="star-wrapper mb-5">
+        <h2>Add Rating</h2>
+        <div class="star-container flex">
+            <i class="fa-solid fa-star fa-beat"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+    </div>
+    <div class="row justify-content-center" id="code-generator-wrapper">
+        <hr><h2><strong>Generate game code:</strong></h2><hr>
+        
+        <div style="font-size: 1rem;">
+            <strong><i class="fa-solid fa-coins"></i> 1 credit</strong>
+            <p>You're just a click away from generating code for your game. Simply hit the button below, and let the magic begin. Get ready to unlock a world of possibilities!</p>
+        </div>
+
+        <div class="col-4">
+            <form id="generate-form">
+                <div class="form-group">
+                    <label for="language" style="font-size: 1rem;">Programming Language:</label>
+                    <select name="language" class="form-select">
+                        <option value="java">Java</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="c#">C#</option>
+                        <option value="c++">C++</option>
+                        <option value="python">Python</option>
+                    </select>
+                </div>
+                <input type="hidden" name="gameIdeaId" id="gameIdeaId">
+                <button type="submit" class="btn btn-success btn-block" id="generate">Generate</button>
+            </form>
+        </div>
+    </div>
+    <br>
+    <div id="spinner" class="spinner-border mx-auto" role="status">
+        <span class="visually-hidden"></span>
+        <!-- Generating code for a game may take a few minutes. Please wait.. -->
+    </div>
+    <div id="errorDiv"></div>
+    <div id="generated-code"></div>
+    <div id="similar-games"></div>
+    <p style="font-size: 0.8em;text-align: center;">
+    <br><hr>
+    <a href="#/games"><button class="btn btn-success">Back</button></a>
+    </p>
+</div>

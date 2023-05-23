@@ -1,0 +1,29 @@
+<div class="template" style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-size: 1.5em;color:black;justify-content: center; text-align: center;">
+  <h2><strong>Games</strong></h2><hr>
+      Here is the full list of game ideas: <br>
+      <div class="input-group" style="width: 400px;">
+      <button class="btn btn-success btn-sm" id="button-filter" style="margin-right: 10px;">Filter by genre</button>
+      <input class="form-control form-control-sm" style="margin-right: 10px;" id="genre-filter" type="text">
+      <button class="btn btn-secondary btn-sm" id="button-reset">Reset</button>
+    </div>
+            <p style='margin-top:1em;font-size: 0.5em;color:black;'>
+              <table class="table">
+                <thead class="table-header">
+                  <tr>
+                    <th><a id="header-title" href="">Title</a></th>
+                    <th>Description</th>
+                    <th><a id="header-genre" href="">Genre</a></th>
+                    <th><a id="header-player" href="">Player</a></th>
+                    <th>Rating</th>
+                    <th>Number of Ratings</th>
+                    <th>More info</th>
+                  </tr>
+                </thead>
+                <tbody id="table-rows">
+              </table>
+
+              <ul id="game-paginator" class="pagination justify-content-center" style="margin-top:10px;"></ul>
+              <button class="btn btn-success btn-sm"><a class="nav-link" href="/games/create" data-navigo>Create game</a></button>
+              <p id="error" style="color:red"></p>
+            </p>
+        </div>

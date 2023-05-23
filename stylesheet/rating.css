@@ -1,0 +1,36 @@
+.fa-star {
+    cursor: pointer;
+    color: #000;
+}
+
+/*
+ * Reverse the order of the star container's children.
+ */
+.star-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+/*
+ * If the cursor is over the second star, highlight both first and second star from right to left.
+ */
+.fa-star:hover~.fa-star,
+.fa-star:hover {
+    color: #f8ce0b;
+}
+
+/*
+ * disabled hover and cursor if star container has class "rated"
+ */
+.star-container.rated .fa-star:hover~.fa-star,
+.star-container.rated .fa-star:hover {
+    color: #000;
+    cursor: initial;
+}
+
+.fa-star.checked,
+.star-container.rated .fa-star:hover~.fa-star.checked,
+.star-container.rated .fa-star.checked:hover {
+    color: #f8ce0b;
+}
