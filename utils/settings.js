@@ -1,7 +1,7 @@
 // Check if the API is running locally or on Azure and set the API_URL accordingly
 export const HOST_URL = (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") ?
     "http://localhost:8081/" :
-    "http://165.22.70.135:8081/"
+    "https://api.bergandersen.com/"
 
 export const API_URL = (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") ?
     HOST_URL + "api/" :
